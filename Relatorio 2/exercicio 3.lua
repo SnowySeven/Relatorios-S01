@@ -1,3 +1,13 @@
+function filtrarMaiores(tabela, limite)
+    local maiores = {}
+    for i = 1, #tabela do
+        if limite < tabela[i] then
+            table.insert(maiores, tabela[i])
+        end
+    end
+    return maiores
+end
+
 local tabela = {}
 local N = tonumber(io.read())
 print ("Digite a quantidade de elementos: ".. N)
@@ -12,11 +22,10 @@ end
 local limite = tonumber(io.read())
 print("Digite o valor limite: " .. limite)
 
+local resultado = filtrarMaiores(tabela, limite)
+
 print("Elementos maiores que " .. limite .. ":")
 
-for i = 1, #tabela do
-    if limite < tabela[i] then
-        print(tabela[i])
-    else
-    end
+for i = 1, #resultado do
+    print(resultado[i])
 end
