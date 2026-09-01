@@ -4,7 +4,7 @@ fn main() {
     let inferior = 1;
     let superior = 999;
     
-    for _ in inferior..=superior {
+    for c in inferior..=superior {
         let mut entrada = String::new();
         println!("Digite a placa do veiculo:");
         io::stdin().read_line(&mut entrada).expect("Erro ao ler");
