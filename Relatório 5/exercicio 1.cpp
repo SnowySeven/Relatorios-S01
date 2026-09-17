@@ -19,8 +19,9 @@ int main()
     int n;
 
     cin >> n;
+    cout << "Digite o tamanho do chaveamento (n): " << n << endl;
 
-    cout << combinar_equipes(n);
+    cout << "Total de cenarios de confrontos possiveis: " << combinar_equipes(n);
 
     return 0;
 }
