@@ -82,7 +82,7 @@ public class Program
         Console.WriteLine("\n=== Fim da Demonstração ===");
     }
 }
-//5. EXPLICAÇÃO DE COMPOSIÇÃO E AGREGAÇÃO NO PROGRAMA: 
+//EXPLICAÇÃO DE COMPOSIÇÃO E AGREGAÇÃO NO PROGRAMA: 
 //COMPOSIÇÃO (Relação Forte): 
 //Acontece entre Maga e Grimorio. O objeto Grimorio é instanciado diretamente dentro
 //do construtor da Maga (new Grimorio()). Isto significa que a sua vida depende estritamente
